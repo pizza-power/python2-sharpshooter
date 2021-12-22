@@ -19,7 +19,6 @@ if [ "$EUID" -ne 0 ]
     exit
 fi
 
-
 # clone sharpshooter from github
 git clone https://github.com/mdsecactivebreach/SharpShooter.git
 
@@ -32,8 +31,6 @@ apt install python2.7 -y
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
 chmod +x ./get-pip.py
 sudo python2.7 ./get-pip.py
-
-
 
 # install correct jsmin
 wget https://files.pythonhosted.org/packages/17/73/615d1267a82ed26cd7c124108c3c61169d8e40c36d393883eaee3a561852/jsmin-2.2.2.tar.gz
